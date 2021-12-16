@@ -2,17 +2,19 @@ import React, { Component } from "react";
 
 class Card extends Component {
 
+  
+
 
   render() {
     return <div>
-      <p>source</p>
-      <p>author</p>
-      <p>title</p>
-      <p>description</p>
-      <p>url</p>
-      <p>imgUrl</p>
+      <p>{this.props.data.section}</p>
+      <p>{this.props.data.title}</p>
+      <p>{this.props.data.abstrac}</p>
+      <p>{this.props.data.multimedia}</p>
+      <p>{this.props.data.url}</p>
     </div>;
   }
 }
 
 export default Card;
+
