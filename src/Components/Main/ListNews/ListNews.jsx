@@ -7,10 +7,11 @@ class ListNews extends Component {
   //   return this.state.tareas.map((tarea, i)=> <Tarea tarea={this.state.tareas[i]}  delete={()=> this.borrarTarea(i)} key={i}/>)
   // }
   pintarNews = () => {
-    return this.props.pintar.map((a, i) => <Card data={a} key={i} />)
+    return this.props.pintar.map((a, i) => <Card delete={()=>this.props.delete(i)} data={a} key={i} />)
 
   }
 
+  
 
 
   render() {
