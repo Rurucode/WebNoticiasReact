@@ -21,6 +21,7 @@ class Main extends Component {
     const data = response.data.results
     console.log(data)
 console.log(data[0].multimedia[0].url);
+    // eslint-disable-next-line
     const arrayfetch = data.map((element, i)=> {
       try {
         return{ 
