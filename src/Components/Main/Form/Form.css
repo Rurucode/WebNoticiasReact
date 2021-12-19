@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+.formDiv {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+form input {
+    height: 2rem;
+    font-size: 1rem;
+}
+
+label p{
+    font-size: 2rem;
+    font-family: 'Italiana'
+}
+
+.submit {
+    height: 4rem;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    font-size: 1.5rem;    
+}
+
+.submit:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}

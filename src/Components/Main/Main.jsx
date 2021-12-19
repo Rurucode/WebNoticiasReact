@@ -4,6 +4,7 @@ import Home from "./Home/Home";
 import ListNews from "./ListNews/ListNews";
 import { Routes, Route } from "react-router-dom";
 import axios from "axios";
+import './Main.css'
 
 
 class Main extends Component {
@@ -16,7 +17,7 @@ class Main extends Component {
   }
 
   async componentDidMount() {
-    const response = await axios.get(`https://api.nytimes.com/svc/topstories/v2/sports.json?api-key=${process.env.REACT_APP_API_KEY}`)
+    const response = await axios.get(`https://api.nytimes.com/svc/topstories/v2/climate.json?api-key=${process.env.REACT_APP_API_KEY}`)
     const data = response.data.results
     console.log(data)
 console.log(data[0].multimedia[0].url);
@@ -57,7 +58,7 @@ console.log(data[0].multimedia[0].url);
   
 
   render() {
-    return <div>
+    return <div id="mainWeb">
       <Routes>
         <Route path="/" element={<Home/>} exact/>
         <Route path="/ListNews" element={<ListNews delete={this.deleteNew} pintar={this.state.noticia}/>}/>

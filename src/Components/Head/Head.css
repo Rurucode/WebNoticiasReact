@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(33, 75, 153);
+    min-height: 8vw;
+}
+
+header h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Faster One'
+}
+
+header h2 {
+    color:greenyellow
+}
+
+.fondoForm {
+    border-radius: 10px;
+}
+
+header h3 {
+    font-size: 2rem;
+    color: chartreuse;
+}

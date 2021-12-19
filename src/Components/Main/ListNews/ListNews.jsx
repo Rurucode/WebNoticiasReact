@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Card from "./Card/Card";
+import './ListNews.css'
 
 class ListNews extends Component {
 
@@ -15,8 +16,8 @@ class ListNews extends Component {
 
 
   render() {
-    return <article>
-      <p>Estas en ListNews</p>
+    return <article className="lista">
+      <p className="welcome">Estás en ListNews</p>
       <>
         {this.pintarNews()}
         

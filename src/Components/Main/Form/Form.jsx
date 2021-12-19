@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Navigate } from "react-router-dom";
+import './Form.css'
 
 class Form extends Component {
   constructor(props) {
@@ -33,27 +34,27 @@ class Form extends Component {
      if (redirect === true) {
        return <Navigate to='/ListNews'/>;
      }
-    return <div>
-      <p>Estas en Form</p>
+    return <div className="formDiv">
 
       <form onSubmit={this.handleSubmit}>
-        <label htmlFor="section">Introduce la seccion.</label><br/>
+        <img className="fondoForm" src="https://s7d9.scene7.com/is/image/NewellRubbermaid/DC29323_Papermate_Advanced_Desktop_medium-hero_2?fmt=jpeg" alt="Fondo" />
+        <label htmlFor="section"><p>Introduce la sección.</p></label><br/>
         <input type="text" id="section" name="section" required="required"/><br />
 
-        <label htmlFor="title">Introduce el titulo de la noticia.</label><br/>
+        <label htmlFor="title"><p>Introduce el título de la noticia.</p></label><br/>
         <input type="text" id="title" name="title" required="required"/><br />
 
-        <label htmlFor="abstrac">Introduce una breve descripcion.</label><br/>
+        <label htmlFor="abstrac"><p>Introduce una breve descripción.</p></label><br/>
         <input type="text" id="abstrac" name="abstrac" required="required"/><br />
 
-        <label htmlFor="multimedia">Introduce la url de la imagen de la noticia</label><br/>
+        <label htmlFor="multimedia"><p>Introduce la url de la imagen de la noticia</p></label><br/>
         <input type="text" id="multimedia" name="multimedia" required="required"/><br />
         
-        <label htmlFor="url">Introduce la url de la noticia.</label><br/>
+        <label htmlFor="url"><p>Introduce la url de la noticia.</p></label><br/>
         <input type="text" id="url" name="url" required="required"/><br />
 
 
-        <input type="submit" value="Añadir noticia"/><br/>
+        <input className="submit" type="submit" value="Añadir noticia"/><br/>
       </form> 
 
       </div>;

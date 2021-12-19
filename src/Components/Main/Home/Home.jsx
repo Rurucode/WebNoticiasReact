@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import {userContext} from '../../../Context/userContext';
+import './Home.css'
+
+
 
 class Home extends Component {
 
@@ -31,16 +34,20 @@ class Home extends Component {
 
   
   
+  
   render() {
     return <div>
-      <p>Bienvenido estas en la Home</p>
-    
-      <form onSubmit={this.handleSubmit}>
-        <label htmlFor="name">Nombre:</label><br/>
-        <input type="text" id="name" name="name" ref={this.name}/><br />
-        <input type="submit" value="Log in"/>
-      </form> 
-    
+      <p className="welcome">Bienvenido estás en la Home</p>
+      <userContext.Consumer>
+        {({user}) => user.name === "" ? <form onSubmit={this.handleSubmit}>
+          <label htmlFor="name">Nombre:</label><br/>
+          <input type="text" id="name" name="name" ref={this.name}/><br />
+          <input type="submit" value="Log in"/>
+        </form> :  "" }
+      </userContext.Consumer>
+
+      <img className="paper" src="https://www.clipartmax.com/png/full/244-2448102_newspaper-png-transparent-images-news-png.png" alt="Foto periodico" />
+
     
     </div>;
     
