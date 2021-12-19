@@ -1,0 +1,14 @@
+#mainWeb {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainWeb div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+

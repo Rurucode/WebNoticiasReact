@@ -1,0 +1,15 @@
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    height: 2rem;
+}
+
+footer p {
+    min-height: 5vh;
+    background-color: rgb(4, 138, 15) ;
+    color: white;
+    
+}
+
